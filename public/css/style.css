@@ -1,0 +1,96 @@
+*{
+
+    padding:0;
+    margin: 0;
+}
+    body{
+        font-family: 'Roboto' , sans-serif;
+    }
+    .banner{
+        width: 100%;
+        
+    }
+    .banner img{
+        width: 100%;
+        
+    }
+    :root{
+        --Amarillo: #EAC926;
+        --Azul: #03264C;
+        --Celeste: #1259c3;
+        --Grisoscuro: #666;
+        --Grisclaro: #ebebeb; 
+        --Verde: #39b54a;
+    }
+    .banner-imagen{
+        width: 100%;
+    }
+    .item li a{
+      color:#000;
+      text-decoration: none;
+    }
+    .articulos{
+        text-align: center;
+        font-size: 24px;
+       
+    }
+    .card{
+        width: 80%;
+        border:1px solid var(--Grisclaro);
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        padding:5px;
+        margin:10px;
+    }
+    .card img{
+        width: 100%;
+        border-bottom: 1px solid var(--Grisclaro);
+    }
+    .fa-bars{
+        background-color: var(--Celeste);
+        color:#fff;
+        padding:10px;
+        border-radius: 5px;
+    }
+    .menu-burger{
+        text-align: center;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .precios{
+        font-size: 18px;
+    }
+    .descuentos{
+        font-size: 16px;
+    }
+    .descripciones{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    main{
+        width: 90%;
+        
+    }
+   
+    .info-footer{
+        text-align: center;
+    }
+    h4{
+        color: var(--Grisoscuro);
+    }
+    
+    @media(min-widt: 460){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .card{
+        width: 35%;
+    }
+
+    }
+    
