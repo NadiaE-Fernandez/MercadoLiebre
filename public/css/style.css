@@ -7,6 +7,9 @@
     body{
         font-family: 'Roboto' , sans-serif;
     }
+    nav{
+        background-color: var(--Amarillo);
+    }
     .banner{
         width: 100%;
         
@@ -63,10 +66,14 @@
         font-size: 30px;
     }
     .precios{
+        width: 30%;
         font-size: 18px;
+        text-align: left;
     }
     .descuentos{
         font-size: 16px;
+        width: 70%;
+        text-align: right;
     }
     .descripciones{
         font-size: 16px;
@@ -87,9 +94,10 @@
         border: 1px solid #39b54a;
         background-color: #FFF;
         border-radius: 50%;
-        position: absolute;
+        position: relative;
         right: 20px;
         top: -15px;
+      
 
     }
    
@@ -99,9 +107,16 @@
     h4{
         color: var(--Grisoscuro);
     }
-    
+    .item{
+        display:none;
+    }
     @media(min-width: 460px){
-
+    .fa-bars{
+        display: none;
+    }
+    .item{
+        display:block;
+    }
     .container{
         display: flex;
         flex-direction: row;
@@ -123,5 +138,14 @@
         }
        
         }
-
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    background-color: var(--Grisclaro);
+}
+.campo{
+ text-align: center;
+}
         
