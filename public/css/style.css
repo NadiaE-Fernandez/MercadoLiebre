@@ -24,7 +24,7 @@ nav{
 }
   
 div .logo img{
-    width: 50%;
+    width: 60%;
     padding: 30px 10px;
 }   
 .buscador{
@@ -210,10 +210,21 @@ h4{
     .card img {
         width: 90%;
     }
+    .buscador{
+        display: flex;
+        align-items: center;
+    }
+    
 } 
     @media(min-width: 769px){
-        
-       
+        .buscador{
+            display: flex;
+            align-items: center;
+        }
+        .item{
+            display: flex;
+            justify-content: space-between;
+        }
         .card{
             width: 200px;
             
@@ -221,13 +232,15 @@ h4{
         .menu-burger{
            display:none;
         }
-        .buscador{
-            flex-wrap:nowrap;
-        }
+        
         footer{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        div .logo img{
+            width: 80%;
+            padding: 30px 10px;
         }
     }
 
