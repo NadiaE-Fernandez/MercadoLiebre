@@ -25,7 +25,7 @@
             <button type="img"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
          </div>
-         <p>Comprá en cuotas y sin tarjeta de crédito</p>
+         <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
          <ul class="item">
             <li><a href="#">Ofertas</a></li>
             <li><a href="#">Tiendas oficiales</a></li>
@@ -46,37 +46,43 @@
         </div>
     </header>
 
-<main>
+<main class="f-contenido">
     <form class="formulario" action="" method="get">
         <h2>Registro</h2>
         <div class="campo">
-            <label for="nombreyapellido">Nombre y Apellido:</label>
-            <input type="text" name="nombreyapellido" id="nombreyapellido">
+            <label for="nombreyapellido"></label>
+            <input type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y Apellido">
         </div>
 
         <div class="campo">
-            <label for="nombreusuario">Nombre de Usuario:</label>
-            <input type="text" name="nombreusuario" id="nombreusuario">
+            <label for="nombreusuario"></label>
+            <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de Usuario">
+        </div>
+        <div class="campo">
+            <label for="nombre"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+        </div>
+        <div class="campo">
+            <label for="fechadenac"></label>
+            <input type="date" name="fechadenac" id="fechadenac" placeholder="mm/dd/yyyy">
         </div>
 
         <div class="campo">
-            <label for="fechadenac">Fecha de Nacimiento:</label>
-            <input type="date" name="fechadenac" id="fechadenac">
-        </div>
-
-        <div class="campo">
-            <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio" id="domicilio">
+            <label for="domicilio"></label>
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
         </div>
 
         <div class="campo">
             <label for="perfildeusuario">Perfil de Usuario</label>
             <div class="campo-radio">
-                <label>Comprador</label>
                 <input type="radio" name="perfildeusuario" id="perfildeusuario" value="comprador">
-                <label>Vendedor</label>
-                <input type="radio" name="perfildeusuario" id="perfildeusuario" value="vendedor">
+                <label>Comprador</label>
             </div>
+            <div class="campo-radio">
+                <input type="radio" name="perfildeusuario" id="perfildeusuario" value="vendedor">
+                <label>Vendedor</label>
+            </div>
+
         </div>
 
         <div class="campo">
@@ -117,9 +123,10 @@
             <label>Confirmar contraseña:</label>
             <input type="password" name="contrasena" id="contrasena">
         </div>
-
+        <div class="campo">
         <button>enviar</button>
         <button>borrar datos del formulario</button>
+        </div>
     </form>
 </main>
 <footer>
